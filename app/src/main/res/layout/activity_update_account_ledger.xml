@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#d2d2d2"
+
+    tools:context="com.ampinity.inv.Activity.UpdateAccountLedgerActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+
+
+        android:elevation="3dp"
+        android:layout_margin="10dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:id="@+id/idTextViewIDAccLedger"
+                android:textColor="@color/textColor"
+                android:layout_margin="5dp"
+                android:text="ID"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                style="?android:textAppearanceSmall"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:background="#00000000"
+                android:text="2"
+                android:gravity="bottom"
+                android:textColor="#000000"
+                android:editable="false"
+                android:id="@+id/idEditTextIDAccLedger"
+                style="?android:textAppearanceMedium"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/idTextVieAccountName"
+                android:textColor="@color/textColor"
+                android:layout_margin="5dp"
+                android:text="Account Name"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                style="?android:textAppearanceSmall"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:textColor="#000000"
+                style="?android:textAppearanceMedium"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinneraccountname"
+                android:layout_margin="5dp"
+                android:spinnerMode="dialog"
+                >
+
+            </Spinner>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/idTextViewAccGroupName"
+                android:textColor="@color/textColor"
+                android:layout_margin="5dp"
+                android:text="A/c Group Name"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                style="?android:textAppearanceSmall"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:textColor="#000000"
+                style="?android:textAppearanceMedium"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinneraccountgroupname"
+                android:layout_margin="5dp"
+                android:spinnerMode="dialog"
+                >
+
+            </Spinner>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/idTextViewopeningbalance"
+                android:textColor="@color/textColor"
+                android:layout_margin="5dp"
+                android:text="Opening Balance "
+                android:textStyle="bold"
+                style="?android:textAppearanceSmall"
+                android:layout_weight="0.5"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Enter Opening Balance"
+                android:gravity="bottom"
+
+                android:id="@+id/idEditTextopeningbalance"
+                style="?android:textAppearanceMedium"
+                android:inputType="numberDecimal"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:textColor="#000000"
+                style="?android:textAppearanceMedium"
+                android:layout_weight=".5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinneropeningbalance"
+                android:layout_margin="5dp"
+                android:spinnerMode="dialog"
+                >
+            </Spinner>>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/idTextViewclosingbalance"
+                android:textColor="@color/textColor"
+                android:layout_margin="5dp"
+                android:text="Closing Balance "
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                style="?android:textAppearanceSmall"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Enter Closing Balance"
+                android:gravity="bottom"
+
+                android:id="@+id/idEditTextclosingbalance"
+                style="?android:textAppearanceMedium"
+                android:inputType="numberDecimal"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:textColor="#000000"
+                style="?android:textAppearanceMedium"
+                android:layout_weight=".5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerclosingbalance"
+                android:layout_margin="5dp"
+                android:spinnerMode="dialog"
+                >
+            </Spinner>>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/idTextViewDescription"
+                android:textColor="@color/textColor"
+                android:layout_margin="5dp"
+                android:text="Description"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                style="?android:textAppearanceSmall"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Enter Description"
+                android:id="@+id/idEditTextDescription"
+                android:gravity="bottom"
+                android:textColor="#000000"
+
+                style="?android:textAppearanceMedium"
+                android:inputType="text"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="2"
+
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical"
+
+                >
+
+                <Button
+                    android:id="@+id/idButtonSave"
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="2dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Save"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#000000"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical"
+
+                >
+
+                <Button
+                    android:id="@+id/idButtonCancel"
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="2dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Cancel"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#000000"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

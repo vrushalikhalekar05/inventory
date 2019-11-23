@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#d2d2d2"
+
+    tools:context="com.ampinity.inv.Activity.UpdateVenderDetailActivity">
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+    <LinearLayout
+
+
+        android:elevation="3dp"
+        android:layout_margin="10dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:id="@+id/idTextViewIdVenderDetail"
+                android:textColor="@color/textColor"
+                android:layout_margin="5dp"
+                android:text="ID"
+                android:layout_gravity="center"
+
+                android:textStyle="bold"
+                style="?android:textAppearanceSmall"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:background="#00000000"
+                android:text=""
+                android:textColor="#000000"
+                android:editable="false"
+                android:id="@+id/idEditTextIDVenderDetail"
+                style="?android:textAppearanceMedium"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/idTextViewName"
+                android:textColor="@color/textColor"
+                android:layout_margin="5dp"
+                android:text="Name"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+
+                style="?android:textAppearanceSmall"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Enter Name"
+                android:id="@+id/idEditTextVenderName"
+                style="?android:textAppearanceMedium"
+                android:inputType="text"
+                android:layout_weight="1.5"
+                android:textColor="#000000"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shaperound"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/idTextViewGroupName"
+                android:textColor="@color/textColor"
+                android:layout_margin="5dp"
+                android:text="Group Name"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+
+                style="?android:textAppearanceSmall"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:textColor="#000000"
+                style="?android:textAppearanceMedium"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:id="@+id/spinnergroupname"
+                android:layout_margin="5dp"
+                android:spinnerMode="dialog"
+                android:background="@drawable/spinner1"
+                >
+
+            </Spinner>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/idTextViewState"
+                style="?android:textAppearanceSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="0.5"
+
+                android:text="State"
+                android:textColor="@color/textColor"
+                android:textStyle="bold" />
+            <Spinner
+                android:textColor="#000000"
+                style="?android:textAppearanceMedium"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:id="@+id/spinnerState"
+                android:layout_margin="5dp"
+                android:spinnerMode="dialog"
+                android:background="@drawable/spinner1"
+
+                >
+
+            </Spinner>
+            <EditText
+                android:visibility="gone"
+                android:hint="Enter State"
+                android:gravity="bottom"
+
+                android:id="@+id/idEditTextState"
+                style="?android:textAppearanceMedium"
+                android:inputType="text"
+                android:layout_weight="1.5"
+                android:textColor="#000000"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/idTextViewCity"
+                android:textColor="@color/textColor"
+                android:layout_margin="5dp"
+                android:text="City"
+                android:layout_gravity="center"
+
+                android:textStyle="bold"
+                style="?android:textAppearanceSmall"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:textColor="#000000"
+                style="?android:textAppearanceMedium"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:id="@+id/spinnerCity"
+                android:layout_margin="5dp"
+                android:spinnerMode="dialog"
+                android:background="@drawable/spinner1"
+                >
+
+            </Spinner>
+            <EditText
+                android:visibility="gone"
+                android:hint="Enter City"
+                android:gravity="bottom"
+
+                android:id="@+id/idEditTextCity"
+                style="?android:textAppearanceMedium"
+                android:inputType="text"
+                android:layout_weight="1.5"
+                android:textColor="#000000"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/idTextViewAddress"
+                android:textColor="@color/textColor"
+                android:layout_margin="5dp"
+                android:text="Address"
+                android:layout_gravity="center"
+
+                android:textStyle="bold"
+                style="?android:textAppearanceSmall"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Enter Address"
+                android:background="@drawable/shaperound"
+                android:id="@+id/idEditTextAddress"
+                style="?android:textAppearanceMedium"
+                android:inputType="text"
+                android:layout_weight="1.5"
+                android:textColor="#000000"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/idTextViewEmail"
+                android:textColor="@color/textColor"
+                android:layout_margin="5dp"
+                android:text="Email"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+
+                style="?android:textAppearanceSmall"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Enter Email"
+                android:background="@drawable/shaperound"
+                android:id="@+id/idEditTextEmail"
+                style="?android:textAppearanceMedium"
+                android:inputType="textEmailAddress"
+                android:layout_weight="1.5"
+                android:textColor="#000000"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/idTextViewPhoneNo"
+                android:textColor="@color/textColor"
+                android:layout_margin="5dp"
+                android:text="PhoneNo"
+                android:layout_gravity="center"
+
+                android:textStyle="bold"
+                style="?android:textAppearanceSmall"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Enter PhoneNo"
+                android:background="@drawable/shaperound"
+                android:id="@+id/idEditTextPhoneNo"
+                style="?android:textAppearanceMedium"
+                android:inputType="number"
+                android:layout_weight="1.5"
+                android:textColor="#000000"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/idTextViewGSTINNo"
+                android:textColor="@color/textColor"
+                android:layout_margin="5dp"
+                android:text="GSTIN Number"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+
+                style="?android:textAppearanceSmall"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Enter GSTIN Number"
+                android:id="@+id/idEditTextGSTINNo"
+                style="?android:textAppearanceMedium"
+                android:inputType="number"
+                android:layout_weight="1.5"
+                android:textColor="#000000"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shaperound"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="2"
+
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical"
+
+                >
+
+                <Button
+                    android:id="@+id/idButtonSave"
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/buttonshaperoundcolor"
+                    android:text="Save"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#000000"
+                    android:textStyle="bold"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical"
+
+                >
+
+                <Button
+                    android:id="@+id/idButtonCancel"
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/buttonshaperoundcolor"
+                    android:text="Cancel"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#000000"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+   </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#d2d2d2"
+
+    tools:context="com.ampinity.inv.Activity.UpdateAttributedetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+
+
+        android:elevation="3dp"
+        android:layout_margin="10dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:id="@+id/idTextViewIDLOB"
+                android:textColor="@color/textColor"
+                android:layout_margin="5dp"
+                android:text="ID"
+                android:layout_gravity="center"
+
+                android:textStyle="bold"
+                style="?android:textAppearanceSmall"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:background="#00000000"
+                android:text=""
+                android:layout_gravity="center"
+
+                android:textColor="#000000"
+                android:editable="false"
+                android:id="@+id/idEditTextIDLOB"
+                style="?android:textAppearanceMedium"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/idTextViewLobName"
+                android:textColor="@color/textColor"
+                android:layout_margin="5dp"
+                android:text="LOB Name "
+                android:layout_gravity="center"
+
+                android:textStyle="bold"
+                style="?android:textAppearanceSmall"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:textColor="#000000"
+                style="?android:textAppearanceMedium"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:id="@+id/spinnerlobname"
+
+                android:spinnerMode="dialog"
+                android:background="@drawable/spinner1"
+                >
+
+            </Spinner>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/idTextViewTotalAttribute"
+                android:textColor="@color/textColor"
+                android:layout_margin="5dp"
+                android:text="Atribute Name"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+
+                style="?android:textAppearanceSmall"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:textColor="#000000"
+                style="?android:textAppearanceMedium"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:id="@+id/spinneratributename"
+
+                android:spinnerMode="dialog"
+                android:background="@drawable/spinner1"
+                >
+
+            </Spinner>
+
+
+        </LinearLayout><!--
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/idTextViewAtributeName"
+                android:textColor="@color/textColor"
+                android:layout_margin="5dp"
+                android:text="Atribute Name"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+
+                style="?android:textAppearanceSmall"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:textColor="#000000"
+                style="?android:textAppearanceMedium"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:id="@+id/spinneratributename"
+
+                android:spinnerMode="dialog"
+                android:background="@drawable/spinner1"
+                >
+
+            </Spinner>
+
+
+        </LinearLayout>-->
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/idTextViewName"
+                android:textColor="@color/textColor"
+                android:layout_margin="5dp"
+                android:text="Name "
+                android:textStyle="bold"
+                style="?android:textAppearanceSmall"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Enter  Name"
+                android:background="@drawable/shaperound"
+                android:id="@+id/idEditTextName"
+                style="?android:textAppearanceMedium"
+                android:inputType="text"
+                android:layout_weight="1.5"
+                android:textColor="#000000"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/idTextViewShortName"
+                android:textColor="@color/textColor"
+                android:layout_margin="5dp"
+                android:text="Short Name"
+                android:textStyle="bold"
+                style="?android:textAppearanceSmall"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Enter Short Name"
+                android:id="@+id/idEditTextShortName"
+                android:textColor="#000000"
+                android:background="@drawable/shaperound"
+                style="?android:textAppearanceMedium"
+                android:inputType="text"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="2"
+
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical"
+
+                >
+
+                <Button
+                    android:id="@+id/idButtonSave"
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/buttonshaperoundcolor"
+                    android:text="Save"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#000000"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical"
+
+                >
+
+                <Button
+                    android:id="@+id/idButtonCancel"
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/buttonshaperoundcolor"
+                    android:text="Cancel"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#000000"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

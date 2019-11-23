@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+       <group android:id="@+id/grpnav_dashboard" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/combo"
+            android:title="Dashboard" /></group>
+    <group  android:id="@+id/grpnav_master" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_master"
+            android:icon="@drawable/dataquality"
+            android:title="Master" /></group>
+    <group  android:id="@+id/grpnav_membershipcard" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_membershipcard"
+            android:icon="@drawable/ic_card_membership_black_24dp"
+            android:title="Membership card" /></group>
+    <group  android:id="@+id/grpnav_Incentiverate" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Incentiverate"
+            android:icon="@drawable/ic_rate_review_black_24dp"
+            android:title="Incentive Rate" /></group>
+    <group  android:id="@+id/grpnav_RackMaster" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_RackMaster"
+            android:icon="@drawable/rack"
+            android:title="Rack Master" /></group>
+
+
+    <group  android:id="@+id/grpnav_employeeDetails" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_employeeDetails"
+            android:icon="@drawable/att3"
+            android:title="Employee Attendance" /></group>
+
+    <group  android:id="@+id/grpnav_employeeAdvance" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_employeeAdvance"
+            android:icon="@drawable/empadvnce"
+            android:title="Employee Advance" /></group>
+
+
+    <group  android:id="@+id/grpnav_Offer" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Offer"
+            android:icon="@drawable/offer"
+            android:title="Offer" /></group>
+
+    <group android:id="@+id/grpnav_purchase" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_purchase"
+            android:icon="@drawable/purchase"
+            android:title="Purchase" /></group>
+    <group android:id="@+id/grpnav_barcode" android:checkableBehavior="single">   <item
+            android:id="@+id/nav_barcode"
+            android:icon="@drawable/barcode"
+            android:title="Barcode" /></group>
+    <group android:id="@+id/grpnav_stock" android:checkableBehavior="single">  <item
+            android:id="@+id/nav_stock"
+            android:icon="@drawable/stock"
+            android:title="Stock" /></group>
+
+    <group android:id="@+id/grpnav_sales" android:checkableBehavior="single">  <item
+            android:id="@+id/nav_Sales"
+            android:icon="@drawable/sales"
+            android:title="Sales" /></group>
+
+    <group android:id="@+id/grpnav_account" android:checkableBehavior="single">  <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/accounting"
+            android:title="Account" /></group>
+    <group android:id="@+id/grpnav_setting" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/services"
+            android:title="Setting" /></group>
+    <group android:id="@+id/grpnav_report" android:checkableBehavior="single">  <item
+            android:id="@+id/nav_report"
+            android:icon="@drawable/combo"
+            android:title="Report" /></group>
+    <group android:id="@+id/grpnav_help" android:checkableBehavior="single">  <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/help"
+            android:title="help" /></group>
+     <group android:id="@+id/grpnav_logout" android:checkableBehavior="single">   <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/shutdown"
+            android:title="Logout" /></group>
+
+
+
+
+</menu>

@@ -1,0 +1,239 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.ampinity.inv.fragment.ReportSalesfragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/idTextViewTaxGroup"
+                android:textColor="@color/textColor"
+                android:layout_margin="5dp"
+                android:text="Search By"
+                android:textStyle="bold"
+                style="?android:textAppearanceSmall"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:textColor="#000000"
+                style="?android:textAppearanceMedium"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerSearchBy"
+                android:layout_margin="5dp"
+                android:spinnerMode="dialog"
+                >
+
+            </Spinner>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/idTextViewName"
+                android:textColor="@color/textColor"
+                android:layout_margin="5dp"
+                android:text=""
+                android:textStyle="bold"
+                style="?android:textAppearanceSmall"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Enter Detail"
+                android:gravity="bottom"
+
+                android:id="@+id/idEditTextRate"
+                style="?android:textAppearanceMedium"
+                android:inputType="text"
+                android:layout_weight="1.5"
+                android:textColor="#000000"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show"
+            android:id="@+id/idButtonAddSalesReturn"
+            style="?android:textAppearanceMedium"
+
+            android:layout_gravity="bottom"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#ffff"
+            android:textColorHint="#000000"
+            android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id = "@+id/relativeLayout1"
+                    android:layout_width = "fill_parent"
+                    android:layout_height = "wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/cell_shape_start"
+                        android:gravity = "center"
+                        android:layout_weight = "1">
+                        <TextView
+                            android:layout_width = "wrap_content"
+                            android:layout_height = "wrap_content"
+
+                            android:gravity = "center"
+                            android:padding = "5dp"
+                            android:text = "ID"
+                            android:textColor = "#ffffff" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/cell_shape"
+                        android:gravity = "center"
+                        android:layout_weight = "2">
+
+                        <TextView
+                            android:layout_width = "wrap_content"
+                            android:layout_height = "wrap_content"
+
+                            android:gravity = "center"
+                            android:padding = "5dp"
+                            android:text = "Gst Name"
+                            android:textColor = "#ffffff" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/cell_shape"
+                        android:gravity = "center"
+                        android:layout_weight = "2">
+
+                        <TextView
+                            android:layout_width = "wrap_content"
+                            android:layout_height = "wrap_content"
+
+                            android:gravity = "center"
+                            android:padding = "5dp"
+                            android:text = "Rate"
+                            android:textColor = "#ffffff" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/cell_shape"
+                        android:gravity = "center"
+                        android:layout_weight = ".5"
+                        >
+                        <TextView
+                            android:layout_width = "wrap_content"
+                            android:layout_height = "wrap_content"
+
+                            android:gravity = "center"
+                            android:padding = "5dp"
+                            android:text = "Edit"
+                            android:textColor = "#ffffff" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/cell_shape"
+                        android:gravity = "center"
+                        android:layout_weight = ".5"
+                        >
+                        <TextView
+                            android:layout_width = "wrap_content"
+                            android:layout_height = "wrap_content"
+
+                            android:gravity = "center"
+                            android:padding = "5dp"
+                            android:text = "Delete"
+                            android:textColor = "#ffffff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/cell_shape"
+                        android:gravity = "center"
+                        android:visibility="gone"
+                        android:layout_weight = "1"
+                        >
+
+                        <TextView
+                            android:layout_width = "wrap_content"
+                            android:layout_height = "wrap_content"
+
+                            android:gravity = "center"
+                            android:padding = "5dp"
+                            android:text = "price"
+                            android:textColor = "#ffffff" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ListView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id = "@+id/listview"
+                    android:nestedScrollingEnabled="true"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:divider = "@null"/>
+            </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

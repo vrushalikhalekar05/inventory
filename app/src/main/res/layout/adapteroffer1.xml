@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id = "@+id/relativeLayout1"
+        android:layout_width = "match_parent"
+        android:weightSum="4"
+        android:layout_height = "wrap_content"
+        android:background = "#ffffff" >
+
+        <TextView
+            android:id="@+id/ID"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/cell_shape_start"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="ID"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/Offername"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/cell_shape"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="Offer Name"
+            android:textColor="#000000" />
+
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/cell_shape"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/idimageviewedit"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/editblue" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:background = "@drawable/cell_shape"
+            android:layout_width="100dp"
+            android:gravity = "center"
+
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/idimageviewdeletered"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/cancelred"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

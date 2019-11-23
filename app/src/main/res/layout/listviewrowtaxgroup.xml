@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id = "@+id/relativeLayout1"
+        android:layout_width = "fill_parent"
+        android:layout_height = "wrap_content"
+        android:background = "#ffffff" >
+
+        <TextView
+            android:gravity="center"
+            android:id = "@+id/idtaxgroup"
+            android:layout_width = "30dp"
+            android:layout_height = "match_parent"
+
+            android:background = "@drawable/cell_shape_start"
+            android:ellipsize = "end"
+            android:padding = "5dp"
+            android:text = "idattributedetail"
+            android:textColor="#000000"
+            android:singleLine = "true" />
+
+        <TextView
+            android:gravity="center"
+            android:id = "@+id/taxgroup"
+            android:layout_width = "150dp"
+            android:layout_height = "match_parent"
+
+            android:background = "@drawable/cell_shape"
+            android:ellipsize = "end"
+            android:padding = "5dp"
+            android:text = "taxgroup"
+            android:textColor="#000000"
+            android:singleLine = "true" />
+
+        <TextView
+            android:gravity="center"
+            android:id = "@+id/rate"
+            android:layout_width = "150dp"
+            android:layout_height = "match_parent"
+
+            android:background = "@drawable/cell_shape"
+            android:ellipsize = "end"
+            android:padding = "5dp"
+            android:text = "Rate"
+            android:textColor="#000000"
+            android:singleLine = "true" />
+
+        <TextView
+            android:gravity="center"
+            android:id = "@+id/cgst"
+            android:layout_width = "150dp"
+            android:layout_height = "match_parent"
+
+            android:background = "@drawable/cell_shape"
+            android:ellipsize = "end"
+            android:textColor="#000000"
+            android:padding = "5dp"
+            android:text = "cgst"
+            android:singleLine = "true" />
+        <TextView
+            android:gravity="center"
+            android:id = "@+id/sgst"
+            android:layout_width = "150dp"
+            android:layout_height = "match_parent"
+
+            android:background = "@drawable/cell_shape"
+            android:ellipsize = "end"
+            android:textColor="#000000"
+            android:padding = "5dp"
+            android:text = "sgst"
+            android:singleLine = "true" />
+        <TextView
+            android:gravity="center"
+            android:id = "@+id/igst"
+            android:layout_width = "150dp"
+            android:layout_height = "match_parent"
+
+            android:background = "@drawable/cell_shape"
+            android:ellipsize = "end"
+            android:textColor="#000000"
+            android:padding = "5dp"
+            android:text = "igst"
+            android:singleLine = "true" />
+
+        <LinearLayout
+            android:background = "@drawable/cell_shape"
+            android:layout_width="80dp"
+            android:gravity = "center"
+
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/idimageviewedit"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/editblue"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:background = "@drawable/cell_shape"
+            android:layout_width="100dp"
+            android:gravity = "center"
+
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/idimageviewdeletered"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/cancelred"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

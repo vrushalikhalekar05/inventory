@@ -1,0 +1,258 @@
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.ampinity.inv.Activity.SaleActivity">
+
+
+    <HorizontalScrollView
+        android:id="@+id/hsv"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:scrollbars="none" >
+
+    <LinearLayout
+
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_weight="1"
+                android:id="@+id/idSalesCustomerdetails"
+                android:layout_width="wrap_content"
+                android:background="@color/colorPrimary"
+
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:text="Customer Details"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/Red"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:id="@+id/idSalesCustomerdetailsbottom">
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+
+                android:id="@+id/idSales"
+
+                android:layout_width="wrap_content"
+                android:background="@color/colorPrimary"
+
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:textStyle="bold"
+                        android:layout_height="match_parent"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:text="Sales"/>
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/Red"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:id="@+id/idSalesbottom">
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:id="@+id/idSalesReturn"
+                android:layout_width="wrap_content"
+                android:background="@color/colorPrimary"
+
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:text="Sales Return"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/Red"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:id="@+id/idSalesReturnbottom">
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:id="@+id/idSalesCreditNote"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:text="Credit Note"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/Red"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:id="@+id/idSalesCreditNotebottom">
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+
+    <FrameLayout
+
+        android:id="@+id/content_framemaster"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9">
+
+
+
+    </FrameLayout>
+
+</LinearLayout>
+-->
+<RelativeLayout
+    android:id="@+id/main_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MasterActivity">
+    <!--<androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>-->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:tabIndicatorHeight="3dp"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tab_layout"/>
+</RelativeLayout>

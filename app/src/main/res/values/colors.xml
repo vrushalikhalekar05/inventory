@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<color name="colorPrimary">#737475</color>
+    <color name="colorPrimaryDark">#737475</color>
+    <color name="colorAccent">#000000</color>-->
+    <color name="white">#ffffff</color>
+    <color name="hintcolor">#d2d2d2</color>
+    <color name="textcolor">#000000</color>
+    <color name="grey">#d2d2d2</color>
+    <color name="textColor">#000000</color>
+    <color name="green">#a3d03f</color>
+    <color name="yellow">#ffce44</color>
+    <color name="violet">#5e3195</color>
+    <color name="pink"> #e61a5f</color>
+    <color name="red">#0D0E0E</color>
+    <color name="Red">#BB0404</color>
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#19191A</color>
+    <color name="colorAccent">#B9BBBD</color>
+   <!-- <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#B9BBBD</color>-->
+    <color name="colorBackground">#03A9F4</color>
+    <color name="colorSplashText">#F0F0F0</color>
+    <color name="colorProgressBar">#FFCE511C</color>
+    <color name="colorTextView">#050505</color>
+
+
+
+</resources>

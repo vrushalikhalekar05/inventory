@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id = "@+id/relativeLayout1"
+        android:layout_width = "match_parent"
+
+        android:layout_height = "wrap_content"
+        android:background = "#ffffff" >
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/cell_shape_start"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="Itemcode"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/cell_shape"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="ItemName"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/billdate"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/cell_shape"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="Column1"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/billno"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/cell_shape"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="DisPer"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/inwords"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/cell_shape"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="GST"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/paymentby"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/cell_shape"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="Stock"
+            android:textColor="#000000" />
+        <!--<TextView
+            android:id="@+id/paidamt"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/cell_shape"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="paidamt"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/remainamt"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/cell_shape"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="remainamt"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/paid"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/cell_shape"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="paid"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/unpaid"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/cell_shape"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="unpaid"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/subtotal"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/cell_shape"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="subtotal"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/discount"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/cell_shape"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="discount"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/sgst"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/cell_shape"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="sgst"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/cgst"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/cell_shape"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="cgst"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/igst"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/cell_shape"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="igst"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/totalamt"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/cell_shape"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="totalamt"
+            android:textColor="#000000" />
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/cell_shape"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/idimageviewedit"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/editblue" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:background = "@drawable/cell_shape"
+            android:layout_width="100dp"
+            android:gravity = "center"
+
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/idimageviewdeletered"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/cancelred"/>
+
+        </LinearLayout>-->
+    </LinearLayout>
+
+
+</LinearLayout>

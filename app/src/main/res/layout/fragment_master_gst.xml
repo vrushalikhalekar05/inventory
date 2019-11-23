@@ -1,0 +1,189 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.ampinity.inv.fragment.MasterGstfragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <HorizontalScrollView
+        android:layout_weight="0.5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="6dp"
+                android:id = "@+id/relativeLayout1"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:background="@color/colorPrimaryDark"
+                >
+                <LinearLayout
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cell_shape_start"
+                    android:gravity = "center"
+                    >
+
+                    <TextView
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+
+                        android:gravity = "center"
+                        android:padding = "5dp"
+                        android:text = "ID"
+                        android:textColor = "#ffffff" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity = "center"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+
+                        android:gravity = "center"
+                        android:padding = "5dp"
+                        android:text = "GST Name "
+                        android:textColor = "#ffffff"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity = "center"
+                    >
+                    <TextView
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+
+                        android:gravity = "center"
+                        android:padding = "5dp"
+                        android:text = "Rate"
+                        android:textColor = "#ffffff"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity = "center"
+
+                    >
+                    <TextView
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+
+                        android:gravity = "center"
+                        android:padding = "5dp"
+                        android:text = "Edit"
+                        android:textColor = "#ffffff" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity = "center"
+
+                    >
+                    <TextView
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+
+                        android:gravity = "center"
+                        android:padding = "5dp"
+                        android:text = "Delete"
+                        android:textColor = "#ffffff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity = "center"
+                    android:visibility="gone"
+
+                    >
+
+                    <TextView
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+
+                        android:gravity = "center"
+                        android:padding = "5dp"
+                        android:text = "price"
+                        android:textColor = "#ffffff" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ListView
+                android:layout_marginLeft="10dp"
+
+                android:id = "@+id/listview"
+                android:nestedScrollingEnabled="true"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:divider = "@null"/>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <!--<com.google.android.material.floatingactionbutton.FloatingActionButton-->
+        <!--android:id="@+id/idButtonAddgst"-->
+        <!--android:backgroundTint="@color/colorPrimary"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:layout_margin="@dimen/fab_margin"-->
+        <!--android:src="@drawable/add_vectorasset" />-->
+
+    <!--<Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Gst"
+        android:id="@+id/idButtonAddgst"
+        style="?android:textAppearanceMedium"
+
+        android:layout_gravity="bottom"
+        android:layout_margin="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffff"
+        android:textColorHint="#000000"
+        android:textStyle="bold"/>-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Gst"
+        style="?android:textAppearanceMedium"
+        android:drawableLeft="@drawable/add_vectorasset"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="36dp"
+        android:id="@+id/idButtonAddgst"
+        android:layout_margin="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffff"
+        android:textColorHint="#000000"
+        android:textStyle="bold"
+        />
+</LinearLayout>

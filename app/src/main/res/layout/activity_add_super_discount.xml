@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.ActivityAddSuperDiscount">
+
+        <LinearLayout
+
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:id="@+id/idTextViewIDLOB"
+                android:textColor="@color/textColor"
+                android:layout_margin="5dp"
+                android:text="ID"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                style="?android:textAppearanceSmall"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:background="#00000000"
+                android:text=""
+                android:gravity="bottom"
+                android:textColor="#000000"
+                android:editable="false"
+                android:id="@+id/idEditTextIDLOB"
+                style="?android:textAppearanceMedium"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/idTextViewLobName"
+                android:textColor="@color/textColor"
+                android:layout_margin="5dp"
+                android:text="Scheme Name "
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                style="?android:textAppearanceSmall"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Enter Scheme Name"
+                android:gravity="bottom"
+
+                android:id="@+id/idEditTextLobName"
+                style="?android:textAppearanceMedium"
+                android:inputType="text"
+                android:layout_weight="1.5"
+                android:textColor="#000000"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:textColor="@color/textColor"
+                android:layout_margin="5dp"
+                android:text="Discount Percentage "
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                style="?android:textAppearanceSmall"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Enter Discount Percentage"
+                android:gravity="bottom"
+
+                android:id="@+id/idEditTextDiscountPercentage"
+                style="?android:textAppearanceMedium"
+                android:inputType="text"
+                android:layout_weight="1.5"
+                android:textColor="#000000"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="2"
+
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical"
+
+                >
+
+                <Button
+                    android:id="@+id/idButtonSave"
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="2dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Save"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#000000"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical"
+
+                >
+
+                <Button
+                    android:id="@+id/idButtonCancel"
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="2dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Cancel"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#000000"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>

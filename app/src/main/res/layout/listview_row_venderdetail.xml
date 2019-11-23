@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id = "@+id/relativeLayout1"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:background = "#ffffff" >
+
+        <TextView
+            android:id = "@+id/ID"
+            android:layout_width = "30dp"
+            android:layout_height = "match_parent"
+
+            android:background = "@drawable/cell_shape_start"
+
+            android:padding = "5dp"
+            android:text = "ID"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:singleLine = "true" />
+        <TextView
+            android:gravity="center"
+            android:id = "@+id/GroupName"
+            android:layout_width = "130dp"
+            android:layout_height = "match_parent"
+
+            android:background = "@drawable/cell_shape"
+
+            android:padding = "5dp"
+            android:text = "Group Name"
+            android:textColor="#000000"
+            android:singleLine = "true" />
+
+        <TextView
+            android:gravity="center"
+            android:id = "@+id/Name"
+            android:layout_width = "210dp"
+            android:layout_height = "match_parent"
+
+            android:background = "@drawable/cell_shape"
+
+            android:padding = "5dp"
+            android:text = "Name"
+            android:textColor="#000000"
+            android:singleLine = "true" />
+
+        <TextView
+            android:gravity="center"
+            android:id = "@+id/Address"
+            android:layout_width = "100dp"
+            android:layout_height = "match_parent"
+
+            android:background = "@drawable/cell_shape"
+
+            android:padding = "5dp"
+            android:text = "Address"
+            android:textColor="#000000"
+            android:singleLine = "true" />
+        <TextView
+            android:gravity="center"
+            android:id = "@+id/City"
+            android:layout_width = "80dp"
+            android:layout_height = "match_parent"
+
+            android:background = "@drawable/cell_shape"
+
+            android:padding = "5dp"
+            android:text = "City"
+            android:textColor="#000000"
+            android:singleLine = "true" />
+        <TextView
+            android:gravity="center"
+            android:id = "@+id/State"
+            android:layout_width = "100dp"
+            android:layout_height = "match_parent"
+
+            android:background = "@drawable/cell_shape"
+
+            android:padding = "5dp"
+            android:text = "State"
+            android:textColor="#000000"
+            android:singleLine = "true" />
+        <TextView
+            android:gravity="center"
+            android:id = "@+id/Email"
+            android:layout_width = "250dp"
+            android:layout_height = "match_parent"
+
+            android:background = "@drawable/cell_shape"
+
+            android:padding = "5dp"
+            android:text = "Email"
+            android:textColor="#000000"
+            android:singleLine = "true" />
+        <TextView
+            android:gravity="center"
+            android:id = "@+id/PhoneNo"
+            android:layout_width = "100dp"
+            android:layout_height = "match_parent"
+
+            android:background = "@drawable/cell_shape"
+
+            android:padding = "5dp"
+            android:text = "PhoneNo"
+            android:textColor="#000000"
+            android:singleLine = "true" />
+        <TextView
+            android:gravity="center"
+            android:id = "@+id/GSTINNumber"
+            android:layout_width = "100dp"
+            android:layout_height = "match_parent"
+
+            android:background = "@drawable/cell_shape"
+
+            android:padding = "5dp"
+            android:text = "GSTINNumber"
+            android:textColor="#000000"
+            android:singleLine = "true" />
+
+       
+        <LinearLayout
+            android:background = "@drawable/cell_shape"
+            android:layout_width="80dp"
+            android:gravity = "center"
+
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/idimageviewedit"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/editblue"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:background = "@drawable/cell_shape"
+            android:layout_width="80dp"
+            android:gravity = "center"
+
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/idimageviewdeletered"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/cancelred"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

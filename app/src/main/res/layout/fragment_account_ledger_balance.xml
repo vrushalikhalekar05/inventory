@@ -1,0 +1,207 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context="com.ampinity.inv.fragment.AccountLedgerBalancefragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_weight="0.5"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal|vertical"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dip"
+        android:scrollbarStyle="outsideInset"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TableLayout
+
+                android:divider="@color/white"
+                android:paddingTop="10dp"
+                android:layout_margin="10dp"
+
+                android:showDividers="middle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="*">
+                <TableRow
+                    android:background="@drawable/table_row_last_bg"
+                    >
+                    <TextView
+                        android:gravity="center"
+                        android:text="SR.NO "
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:id="@+id/tableheaderIdprofitloss"
+
+
+
+
+                        />
+                    <TextView
+                        android:gravity="center"
+                        android:text=" Voucher No"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:background="@drawable/table_cell_bg"
+                        android:id="@+id/tableheaderNameAttribute"
+                        />
+                    <TextView
+                        android:gravity="center"
+                        android:text="Voucher Type "
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:id="@+id/tableheaderbilling"
+
+                        />
+                    <TextView
+                        android:gravity="center"
+                        android:text="Date "
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:background="@drawable/table_cell_bg"
+                        android:id="@+id/tableheaderEpenses"
+                        />
+                    <TextView
+                        android:gravity="center"
+                        android:text=" Debit "
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:id="@+id/tablesalary"
+
+                        />
+                    <TextView
+                        android:gravity="center"
+                        android:text="Credit "
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:background="@drawable/table_cell_bg"
+                        android:id="@+id/tableheaderExpenses"
+                        />
+
+                </TableRow>
+                <TableRow
+                    android:background="@drawable/table_row_bg">
+                    <TextView
+                        android:textColor="@color/textcolor"
+                        android:text="1"
+                        android:gravity="center"
+                        android:textStyle="italic"
+
+                        />
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/textcolor"
+                        android:text="xyz"
+                        android:textStyle="italic"
+                        android:background="@drawable/table_cell_bg"
+                        />
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/textcolor"
+                        android:text="cc"
+                        android:textStyle="italic"
+
+                        />
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/textcolor"
+                        android:text="122"
+                        android:textStyle="italic"
+                        android:background="@drawable/table_cell_bg"
+                        />
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/textcolor"
+                        android:text="123"
+                        android:textStyle="italic"
+
+                        />
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/textcolor"
+                        android:text="122"
+                        android:textStyle="italic"
+                        android:background="@drawable/table_cell_bg"
+                        />
+
+                </TableRow>
+                <TableRow
+                    android:background="@drawable/table_row_bg"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/textcolor"
+                        android:text="2"
+                        android:gravity="center"
+                        android:textStyle="italic"
+
+                        />
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/textcolor"
+                        android:text="xyz"
+                        android:textStyle="italic"
+                        android:background="@drawable/table_cell_bg"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/textcolor"
+                        android:text="km"
+                        android:textStyle="italic"
+
+                        />
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/textcolor"
+                        android:text="123"
+                        android:textStyle="italic"
+                        android:background="@drawable/table_cell_bg"
+                        />
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/textcolor"
+                        android:text="126"
+                        android:textStyle="italic"
+
+                        />
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/textcolor"
+                        android:text="126"
+                        android:textStyle="italic"
+
+                        />
+
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Export to Excel File"
+        android:id="@+id/idButtonExportExcelFile"
+        style="?android:textAppearanceMedium"
+
+        android:layout_gravity="bottom"
+        android:layout_margin="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffff"
+        android:textColorHint="#000000"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>

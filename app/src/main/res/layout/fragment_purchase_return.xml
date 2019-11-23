@@ -1,0 +1,615 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".fragment.PurchaseReturnfragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:visibility="gone"
+        android:layout_weight="0.9"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal|vertical"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dip"
+        android:scrollbarStyle="outsideInset"
+        android:fillViewport="true">
+        <HorizontalScrollView
+
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:gravity="center|center_horizontal"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_gravity="center"
+
+                    android:divider="@color/white"
+                    android:paddingTop="10dp"
+                    android:layout_margin="10dp"
+                    android:showDividers="middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:stretchColumns="*">
+                    <TableRow
+                        android:background="@drawable/table_row_last_bg"
+                        >
+                        <TextView
+                            android:gravity="center"
+                            android:text=" ID "
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:id="@+id/tableheaderpurchaseid"
+
+
+
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:text=" Date "
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:background="@drawable/table_cell_bg"
+                            android:id="@+id/tableheaderpurchasedate"
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:text=" Vender Name "
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:id="@+id/tableheadervenderName"
+
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:text=" Bill No "
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:background="@drawable/table_cell_bg"
+                            android:id="@+id/tableheaderbillno"
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:text=" Payment By "
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:id="@+id/tableheaderpaymentby"
+
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:text=" Status "
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:background="@drawable/table_cell_bg"
+                            android:id="@+id/tableheaderStauts"
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:text=" Payment Date "
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:id="@+id/tableheaderpaymentDate"
+
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:text=" Remaining Amount "
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:background="@drawable/table_cell_bg"
+                            android:id="@+id/tableheaderRemainingAmount"
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:text=" Total Sub "
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:id="@+id/tableheaderTotalSub"
+
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:text=" Discount  "
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:background="@drawable/table_cell_bg"
+                            android:id="@+id/tableheaderDiscount"
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:text=" Total Amount "
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:id="@+id/tableheaderAmount"
+
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:background="@drawable/table_row_bg">
+                        <TextView
+                            android:textColor="@color/textcolor"
+                            android:text="1"
+                            android:gravity="center"
+                            android:textStyle="italic"
+
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@color/textcolor"
+                            android:text="xyz"
+                            android:textStyle="italic"
+                            android:background="@drawable/table_cell_bg"
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@color/textcolor"
+                            android:text="3"
+                            android:textStyle="italic"
+
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@color/textcolor"
+                            android:text="xyz"
+                            android:textStyle="italic"
+                            android:background="@drawable/table_cell_bg"
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@color/textcolor"
+                            android:text="3"
+                            android:textStyle="italic"
+
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@color/textcolor"
+                            android:text="xyz"
+                            android:textStyle="italic"
+                            android:background="@drawable/table_cell_bg"
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@color/textcolor"
+                            android:text="3"
+                            android:textStyle="italic"
+
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@color/textcolor"
+                            android:text="xyz"
+                            android:textStyle="italic"
+                            android:background="@drawable/table_cell_bg"
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@color/textcolor"
+                            android:text="3"
+                            android:textStyle="italic"
+
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@color/textcolor"
+                            android:text="xyz"
+                            android:textStyle="italic"
+                            android:background="@drawable/table_cell_bg"
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@color/textcolor"
+                            android:text="3"
+                            android:textStyle="italic"
+
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:background="@drawable/table_row_bg"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/textcolor"
+                            android:text="2"
+                            android:gravity="center"
+                            android:textStyle="italic"
+
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@color/textcolor"
+                            android:text="xyz"
+                            android:textStyle="italic"
+                            android:background="@drawable/table_cell_bg"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@color/textcolor"
+                            android:text="4"
+                            android:textStyle="italic"
+
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@color/textcolor"
+                            android:text="xyz"
+                            android:textStyle="italic"
+                            android:background="@drawable/table_cell_bg"
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@color/textcolor"
+                            android:text="3"
+                            android:textStyle="italic"
+
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@color/textcolor"
+                            android:text="xyz"
+                            android:textStyle="italic"
+                            android:background="@drawable/table_cell_bg"
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@color/textcolor"
+                            android:text="3"
+                            android:textStyle="italic"
+
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@color/textcolor"
+                            android:text="xyz"
+                            android:textStyle="italic"
+                            android:background="@drawable/table_cell_bg"
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@color/textcolor"
+                            android:text="3"
+                            android:textStyle="italic"
+
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@color/textcolor"
+                            android:text="xyz"
+                            android:textStyle="italic"
+                            android:background="@drawable/table_cell_bg"
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@color/textcolor"
+                            android:text="3"
+                            android:textStyle="italic"
+
+                            />
+                    </TableRow>
+
+                </TableLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+    <HorizontalScrollView
+        android:layout_weight="0.5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id = "@+id/relativeLayout1"
+                android:layout_width = "fill_parent"
+                android:layout_height = "wrap_content"
+                android:background="@color/colorPrimaryDark"
+                >
+                <LinearLayout
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cell_shape_start"
+                    android:gravity = "center"
+                    >
+
+                    <TextView
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+
+                        android:gravity = "center"
+                        android:padding = "5dp"
+                        android:text = "ID"
+                        android:textColor = "#ffffff" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity = "center"
+                    >
+
+                    <TextView
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+
+                        android:gravity = "center"
+                        android:padding = "5dp"
+                        android:text = "Vender Name"
+                        android:textColor = "#ffffff" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity = "center"
+                    >
+                    <TextView
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+
+                        android:gravity = "center"
+                        android:padding = "5dp"
+                        android:text = "BillNo"
+                        android:textColor = "#ffffff" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity = "center"
+                    >
+                    <TextView
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+
+                        android:gravity = "center"
+                        android:padding = "5dp"
+                        android:text = "Date"
+                        android:textColor = "#ffffff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity = "center"
+
+                    >
+                    <TextView
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+
+                        android:gravity = "center"
+                        android:padding = "5dp"
+                        android:text = "InWord"
+                        android:textColor = "#ffffff" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity = "center"
+
+                    >
+                    <TextView
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+
+                        android:gravity = "center"
+                        android:padding = "5dp"
+                        android:text = "PaidAmount"
+                        android:textColor = "#ffffff" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity = "center"
+
+                    >
+                    <TextView
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+
+                        android:gravity = "center"
+                        android:padding = "5dp"
+                        android:text = "RemainingAmount"
+                        android:textColor = "#ffffff" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity = "center"
+
+                    >
+                    <TextView
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+
+                        android:gravity = "center"
+                        android:padding = "5dp"
+                        android:text = "TotalSub"
+                        android:textColor = "#ffffff" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity = "center"
+
+                    >
+                    <TextView
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+
+                        android:gravity = "center"
+                        android:padding = "5dp"
+                        android:text = "Discount"
+                        android:textColor = "#ffffff" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity = "center"
+
+                    >
+                    <TextView
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+
+                        android:gravity = "center"
+                        android:padding = "5dp"
+                        android:text = "DatePaid"
+                        android:textColor = "#ffffff" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity = "center"
+
+                    >
+                    <TextView
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+
+                        android:gravity = "center"
+                        android:padding = "5dp"
+                        android:text = "TotalAmount"
+                        android:textColor = "#ffffff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity = "center"
+
+                    >
+                    <TextView
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+
+                        android:gravity = "center"
+                        android:padding = "5dp"
+                        android:text = "Edit"
+                        android:textColor = "#ffffff" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity = "center"
+
+                    >
+                    <TextView
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+
+                        android:gravity = "center"
+                        android:padding = "5dp"
+                        android:text = "Delete"
+                        android:textColor = "#ffffff" />
+                </LinearLayout>
+
+                <!--<LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity = "center"
+                    android:visibility="gone"
+                    android:layout_weight = "1"
+                    >
+
+                    <TextView
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+
+                        android:gravity = "center"
+                        android:padding = "5dp"
+                        android:text = "price"
+                        android:textColor = "#ffffff" />
+                </LinearLayout>-->
+
+            </LinearLayout>
+
+            <ListView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:id = "@+id/listview"
+                android:nestedScrollingEnabled="true"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:divider = "@null"/>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+    <!--<com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/idButtonAddPurchaseReturn"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/add_vectorasset" />-->
+
+    <!--<Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Purchase Return"
+        android:id="@+id/idButtonAddPurchaseReturn"
+        style="?android:textAppearanceMedium"
+
+        android:layout_gravity="bottom"
+        android:layout_margin="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffff"
+        android:textColorHint="#000000"
+        android:textStyle="bold"/>
+-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Purchase Return"
+        style="?android:textAppearanceMedium"
+        android:drawableLeft="@drawable/add_vectorasset"
+
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="36dp"
+        android:id="@+id/idButtonAddPurchaseReturn"
+
+        android:layout_margin="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffff"
+        android:textColorHint="#000000"
+        android:textStyle="bold"
+
+        />
+</LinearLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id = "@+id/relativeLayout1"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:background = "#ffffff" >
+
+        <TextView
+            android:id = "@+id/IDPurchaseEntry"
+            android:layout_width = "30dp"
+            android:layout_height = "match_parent"
+            android:padding="5dp"
+            android:background = "@drawable/cell_shape_start"
+
+
+            android:text = "ID"
+            android:gravity="center"
+            android:textColor="#000000"
+
+            />
+        <TextView
+            android:gravity="center"
+            android:id = "@+id/VenderName"
+            android:layout_width = "251dp"
+            android:layout_height = "match_parent"
+            android:padding="5dp"
+
+            android:background = "@drawable/cell_shape"
+
+
+            android:text = "Vender Name"
+            android:textColor="#000000"
+
+           />
+
+        <TextView
+            android:gravity="center"
+            android:id = "@+id/SupplierBillNo"
+            android:layout_width = "152dp"
+            android:layout_height = "match_parent"
+            android:padding="5dp"
+
+            android:background = "@drawable/cell_shape"
+
+
+            android:text = "BillNo"
+            android:textColor="#000000"
+             />
+
+        <TextView
+            android:gravity="center"
+            android:id = "@+id/Date"
+            android:layout_width = "152dp"
+            android:layout_height = "match_parent"
+            android:padding="5dp"
+
+            android:background = "@drawable/cell_shape"
+
+
+            android:text = "Date"
+            android:textColor="#000000"
+
+            />
+        <TextView
+            android:gravity="center"
+            android:id = "@+id/InWord"
+            android:layout_width = "153dp"
+            android:layout_height = "match_parent"
+            android:padding="5dp"
+
+            android:background = "@drawable/cell_shape"
+
+
+            android:text = "InWord"
+            android:textColor="#000000"
+             />
+        <TextView
+            android:gravity="center"
+            android:id = "@+id/PaidAmount"
+            android:layout_width = "155dp"
+            android:layout_height = "match_parent"
+            android:padding="5dp"
+
+            android:background = "@drawable/cell_shape"
+
+
+            android:text = "PaidAmount"
+            android:textColor="#000000"
+             />
+        <TextView
+            android:gravity="center"
+            android:id = "@+id/RemainingAmount"
+            android:layout_width = "155dp"
+            android:layout_height = "match_parent"
+            android:padding="5dp"
+
+            android:background = "@drawable/cell_shape"
+
+
+            android:text = "RemainingAmount"
+            android:textColor="#000000"
+             />
+        <TextView
+            android:gravity="center"
+            android:id = "@+id/TotalSub"
+            android:layout_width = "155dp"
+            android:layout_height = "match_parent"
+
+            android:background = "@drawable/cell_shape"
+
+            android:padding="5dp"
+            android:text = "TotalSub"
+            android:textColor="#000000"
+             />
+        <TextView
+            android:gravity="center"
+            android:id = "@+id/Discount"
+            android:layout_width = "100dp"
+            android:layout_height = "match_parent"
+            android:padding="5dp"
+
+            android:background = "@drawable/cell_shape"
+
+
+            android:text = "Discount"
+            android:textColor="#000000"
+             />
+        <TextView
+            android:gravity="center"
+            android:id = "@+id/DatePaid"
+            android:layout_width = "153dp"
+            android:layout_height = "match_parent"
+            android:padding="5dp"
+
+            android:background = "@drawable/cell_shape"
+
+
+            android:text = "DatePaid"
+            android:textColor="#000000"
+             />
+        <TextView
+            android:gravity="center"
+            android:id = "@+id/TotalAmount"
+            android:layout_width = "153dp"
+            android:layout_height = "match_parent"
+
+            android:background = "@drawable/cell_shape"
+            android:padding="5dp"
+
+
+            android:text = "TotalAmount"
+            android:textColor="#000000"
+             />
+
+
+        <LinearLayout
+            android:background = "@drawable/cell_shape"
+            android:layout_width="100dp"
+            android:gravity = "center"
+            android:padding="5dp"
+
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/idimageviewedit"
+                android:layout_width="30dp"
+                android:layout_height="15dp"
+                android:src="@drawable/editblue"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:background = "@drawable/cell_shape"
+            android:layout_width="100dp"
+            android:gravity = "center"
+            android:padding="5dp"
+
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/idimageviewdeletered"
+                android:layout_width="30dp"
+                android:layout_height="15dp"
+                android:src="@drawable/cancelred"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

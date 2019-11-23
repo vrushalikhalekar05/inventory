@@ -1,0 +1,578 @@
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ampinity.inv.Activity.AccountActivity">
+    <HorizontalScrollView
+        android:id="@+id/hsv"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:scrollbars="none" >
+
+        <LinearLayout
+
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+
+                android:id="@+id/idCreateLedger"
+                android:layout_width="wrap_content"
+                android:background="@color/colorPrimary"
+                android:layout_margin="0.2dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:textStyle="bold"
+                        android:layout_height="match_parent"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:text="Create Ledger"/>
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/Red"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:id="@+id/idCreateLedgerbottom">
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+
+                android:id="@+id/idPayment"
+                android:layout_width="wrap_content"
+                android:background="@color/colorPrimary"
+                android:layout_margin="0.2dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:text="Cash Payment"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/Red"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:id="@+id/idPaymentbottom">
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+
+                android:id="@+id/idBankPayment"
+                android:layout_width="wrap_content"
+                android:background="@color/colorPrimary"
+                android:layout_margin="0.2dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:text="Bank Payment"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/Red"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:id="@+id/idBankPaymentbottom">
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:background="@color/colorPrimary"
+                android:layout_margin="0.2dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/idReceipt"
+                android:layout_height="wrap_content">
+                <LinearLayout
+
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:text="Cash Receipt"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/Red"
+                    android:layout_gravity="bottom"
+                    android:id="@+id/idReceiptbottom">
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:background="@color/colorPrimary"
+            android:layout_margin="0.2dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/idBankReceipt"
+            android:layout_height="wrap_content">
+            <LinearLayout
+
+                android:layout_margin="10dp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:text="Bank Receipt"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/Red"
+                android:layout_gravity="bottom"
+                android:id="@+id/idBankReceiptbottom">
+
+            </LinearLayout>
+        </LinearLayout>
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:background="@color/colorPrimary"
+                android:layout_margin="0.2dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/idJournalVoucher"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_margin="10dp"
+
+
+                    android:gravity="center"
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:text="Journal Voucher"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:background="@color/Red"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:id="@+id/idJournalVoucherbottom">
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:background="@color/colorPrimary"
+                android:layout_margin="0.2dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/idLedgerBalance"
+                android:layout_height="wrap_content">
+                <LinearLayout
+
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:text="Ledger Balance"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/Red"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:id="@+id/idLedgerBalancebottom">
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:background="@color/colorPrimary"
+                android:layout_margin="0.2dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/idDayBook"
+                android:layout_height="wrap_content">
+                <LinearLayout
+
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:text="Day Book"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/Red"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:id="@+id/idDayBookbottom">
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:background="@color/colorPrimary"
+                android:layout_margin="0.2dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/idTrialBalance"
+                android:layout_height="wrap_content">
+                <LinearLayout
+
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:text="Trial Balance"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/Red"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:id="@+id/idTrialBalancebottom">
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:background="@color/colorPrimary"
+                android:layout_margin="0.2dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/idBalanceSheet"
+                android:layout_height="wrap_content">
+                <LinearLayout
+
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:text="BalanceSheet"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/Red"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:id="@+id/idBalanceSheetbottom">
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:background="@color/colorPrimary"
+                android:layout_margin="0.2dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/idBankBook"
+                android:layout_height="wrap_content">
+                <LinearLayout
+
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:text="BankBook"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/Red"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:id="@+id/idBankBookbottom">
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:background="@color/colorPrimary"
+                android:layout_margin="0.2dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/idProfitLoss"
+                android:layout_height="wrap_content">
+                <LinearLayout
+
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:text="ProfitLoss"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/Red"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:id="@+id/idProfitLossbottom">
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+    <FrameLayout
+
+        android:id="@+id/content_framemaster"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9">
+
+
+
+    </FrameLayout>
+
+</LinearLayout>
+-->
+<RelativeLayout
+    android:id="@+id/main_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MasterActivity">
+    <!--<androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>-->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:tabIndicatorHeight="3dp"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tab_layout"/>
+</RelativeLayout>

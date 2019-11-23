@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TableLayout
+        android:stretchColumns="*"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:background="@drawable/table_row_bg">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chkIs"
+                />
+            <TextView
+                android:textColor="@color/textcolor"
+                android:text="xycv"
+                android:gravity="center"
+                android:textStyle="italic"
+
+                />
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/textcolor"
+                android:text="xyz"
+                android:textStyle="italic"
+                android:background="@drawable/table_cell_bg"
+                />
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/textcolor"
+                android:text="200"
+                android:textStyle="italic"
+
+                />
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/textcolor"
+                android:text="2"
+                android:background="@drawable/table_cell_bg"
+                android:textStyle="italic"
+
+                />
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/textcolor"
+                android:text="2"
+                android:textStyle="italic"
+
+                />
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/textcolor"
+                android:text="2"
+                android:background="@drawable/table_cell_bg"
+                android:textStyle="italic"
+
+                />
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/textcolor"
+                android:text="2"
+                android:textStyle="italic"
+
+                />
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/textcolor"
+                android:text="2"
+                android:background="@drawable/table_cell_bg"
+                android:textStyle="italic"
+
+                />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
